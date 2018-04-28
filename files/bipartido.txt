@@ -1,0 +1,2 @@
+﻿[[b, c, a], [b, d, c], [e, d, c], [e, f, d], [b, e, c]]
+Não é bipartido

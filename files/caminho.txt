@@ -1,0 +1,3 @@
+Menor Caminho - [(a : g), (g : i), (i : e), (d : e)]
+Valor caminho: 7.0
+Quantidade arestas: 4
