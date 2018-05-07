@@ -28,9 +28,9 @@ public class Questao3 {
 		bufferedWriter.write(circulos.toString());
 		bufferedWriter.newLine();
 		if(bipartido(circulos)) {
-			bufferedWriter.write("� bipartido");
+			bufferedWriter.write("É bipartido");
 		}else {
-			bufferedWriter.write("N�o � bipartido");
+			bufferedWriter.write("Não é bipartido");
 		}
 		bufferedWriter.close();
 		fileWriter.close();

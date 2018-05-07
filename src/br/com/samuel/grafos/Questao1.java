@@ -40,10 +40,7 @@ public class Questao1 {
 	}
 
 	private static void questao1(Graph<String, DefaultEdge> graph) {
-//		String pathGrafo = new File("").getAbsolutePath()+"/files/grafoSimples.txt";
-//		Graph<Object, DefaultEdge> graph = ImportSimpleGraphCSV.importarCSV(pathGrafo);
-//				
-		
+
 		String pathPlanilha = new File("").getAbsolutePath()+"/files/planilha.csv";
 		matrizIncidencia(graph,pathPlanilha);
 		
