@@ -13,7 +13,10 @@ import java.io.IOException;
 
 public class Questao2 {
 	
-	
+	/**
+	 * Método principal responsável por fazer a tarefa da segunda questão. 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		SimpleWeightedGraph<String,DefaultWeightedEdge> graph = criaGrafo();
@@ -35,14 +38,23 @@ public class Questao2 {
 			e.printStackTrace();
 		}
 	}
-
+	
+	/**
+	 * Busca o menor cainho de um vertice até outro de um grafo ponderado
+	 * @param graph
+	 * @return o menor caminho do vertice a até o vertice d do grafo recebido como parâmetro
+	 */
 	private static GraphPath<String,DefaultWeightedEdge> menorCaminho(SimpleWeightedGraph<String, DefaultWeightedEdge> graph) {
 		
 		DijkstraShortestPath <String,DefaultWeightedEdge>  path = new DijkstraShortestPath <String,DefaultWeightedEdge> (graph);
 		
 		return path.getPath("a", "d");
 	}
-
+	
+	/**
+	 * Cria um grafo ponderado
+	 * @return retorna o grafo criado
+	 */
 	private static SimpleWeightedGraph<String, DefaultWeightedEdge> criaGrafo() {
 		SimpleWeightedGraph<String,DefaultWeightedEdge> graph = new SimpleWeightedGraph<String, DefaultWeightedEdge>(DefaultWeightedEdge.class);
 		

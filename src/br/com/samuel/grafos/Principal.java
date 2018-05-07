@@ -4,12 +4,10 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 
+
 /**
-
-* @author Samuel Pereira de Vasconcelos
-
-*/
-
+ * Esse é o programa principal. É aqui onde todas as questões serão chamadas para realizar seu trabalho.
+ */
 public class Principal {
 	
 	public static void main(String[] args) throws IOException {

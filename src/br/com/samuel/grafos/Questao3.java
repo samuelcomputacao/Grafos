@@ -13,6 +13,11 @@ import org.jgrapht.graph.SimpleGraph;
 
 public class Questao3 {
 	
+	/**
+	 * Método rersponsável por executar a tarefa da terceira questão. Aqui é criadp um arquivo txt que será
+	 * salvo o resultado do processamento
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		
 		
@@ -39,7 +44,11 @@ public class Questao3 {
 		}
 	}
 
-
+	/**
+	 * Verifica se um grafo é bipartido
+	 * @param circulos: uma lista de todos os circulos encontrado no grafo 
+	 * @return um bolleano respresentando se o grafo é bipartido ou não
+	 */
 	private static boolean bipartido(List<List<String>> circulos) {
 		for(List<String> circulo: circulos) {
 			if(impar(circulo.size())) {
@@ -49,10 +58,19 @@ public class Questao3 {
 		return true;
 	}
 
+	/**
+	 * verifica se um número é impar
+	 * @param i : número que será verificado
+	 * @return um bolleano
+	 */
 	private static boolean impar(int i) {
 		return (i%2)!= 0;
 	}
-
+	
+	/**
+	 * Cria um grafo que será usado na questão
+	 * @return retorna o grafo criado
+	 */
 	private static Graph<String, DefaultEdge> criaGrafo() {
 		Graph<String, DefaultEdge> graph = new SimpleGraph<String,DefaultEdge>(DefaultEdge.class);
 		
